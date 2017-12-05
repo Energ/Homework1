@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/item_albumImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_library_music_black_24dp" />
+
+    <TextView
+        android:id="@+id/item_songName"
+        android:layout_toRightOf="@+id/item_albumImage"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Song Name"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/item_singer"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="Singer"
+        android:textSize="20dp"
+        android:layout_below="@+id/item_songName"
+        android:layout_alignLeft="@+id/item_songName"
+        android:layout_alignStart="@+id/item_songName" />
+
+</RelativeLayout>

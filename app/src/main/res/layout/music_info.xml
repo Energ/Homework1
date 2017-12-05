@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/album"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/item_albumImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="120dp">
+        </ImageView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_songName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/album"
+        android:gravity="center"
+        android:hint="Song Name"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/item_singer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/item_songName"
+        android:gravity="center"
+        android:hint="Singer"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/item_singer"
+        android:hint="Grade"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/order"
+        android:hint="Like"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/albumName"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/like"
+        android:hint="Album Name"
+        android:textSize="18dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:layout_centerInParent="true"
+        android:text="Music List"
+        android:gravity="center"
+        android:layout_below="@+id/albumName"/>
+
+</RelativeLayout>
